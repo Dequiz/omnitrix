@@ -22,8 +22,8 @@
     border: solid black 5px;
     position: absolute;
     top: 100px;
-    z-index: 1;
     transition: transform ease 1s;
+    z-index: 1;
 }
 .omnitrix {
     position: absolute;
@@ -222,4 +222,64 @@
     border-radius: 50%;
     background-color: greenyellow;
     border: solid black 4px;
+}
+.botaoFrente{
+    font-size: 30px;
+    background-color: greenyellow;
+    border: solid black 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botoes{
+    display: none;
+    position: absolute;
+    top: 560px;
+}
+.botaoAbrir{
+    background-color: greenyellow;
+    border: solid black 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botaoAbrir img{
+    width: 35px;
+    height: 35px;
+}
+.botaoTras{
+    font-size: 30px;
+    background-color: greenyellow;
+    border: solid black 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 500px){
+    .container{
+        top: -100px;
+    }
+    .movimento{
+        top: 150px;
+    }
+    .omnitrix{
+        width: 400px;
+        height: 400px;
+        top: 150px;
+        background-color: rgb(61,61,61);
+    }
+    .botoes{
+        top: 600px;
+        display: flex;
+    }
 }
