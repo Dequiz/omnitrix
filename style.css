@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    position: relative;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    background-color: white;
+}
+.movimento{
+    background-color: #1a1a1a00;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    border: solid black 5px;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    transition: transform ease 1s;
+}
+.omnitrix {
+    position: absolute;
+    background-color: rgb(61, 61, 61);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    border: black solid 5px;
+
+}
+.bordaExterior{
+    background-color: #1a1a1a;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    border: solid black 5px;
+}
+.bordaInterior{
+    background-color: rgb(179, 179, 179);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    height: 310px;
+    width: 310px;
+    border: solid black 5px;
+    z-index: 999;
+}
+.circuloInterno {
+    position: relative;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    background-color: greenyellow;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border: solid black 5px;
+    transition: all ease 1s;
+}
+.circuloTransformacao{
+    position: relative;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    background-color: greenyellow;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border: solid black 5px;
+    transition: all ease 1s;
+}
+.triangulo1 {
+    position: absolute;
+    background-color: rgb(75, 75, 75);
+    border: solid 10px black;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    top: 30px;
+    right: 200px;
+    z-index: 1;
+    transition: right ease 3s;
+}
+
+.triangulo2 {
+    bottom: 30px;
+    left: 200px;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(75, 75, 75);
+    border: solid 10px black;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    transition: left ease 3s;
+}
+.trianguloSelecao{
+     height: 280px;
+     width: 350px;
+     background-color: rgb(0, 0, 0);
+     clip-path: polygon(50% 0%, 72% 50%, 50% 100%, 28% 50%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     right: -35px;
+     bottom: 300px;
+     transition: bottom ease 1s;
+}
+.losangoInterno{
+    height: 230px;
+    width: 300px;
+    background-color: greenyellow;
+    clip-path: polygon(50% 0%, 72% 50%, 50% 100%, 28% 50%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.losangoInterno img{
+    height:100px;
+    width: 60px;
+}
+.circuloMovimento-1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(61, 61, 61);
+    border: solid black 5px;
+    position: absolute;
+    top: 170px;
+    left: -19px;
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+}
+.bolinha1{
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    right: 10px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    border: solid black 4px;
+}
+.circuloMovimento-2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(61, 61, 61);
+    border: solid black 5px;
+    position: absolute;
+    top: 170px;
+    right: -19px;
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+}
+.bolinha2{
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    left: 10px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    border: solid black 4px;
+}
+.circuloMovimento-3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(61, 61, 61);
+    border: solid black 5px;
+    position: absolute;
+    top: -19px;
+    left: 170px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.bolinha3{
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    border: solid black 4px;
+}
+.circuloMovimento-4{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(61, 61, 61);
+    border: solid black 5px;
+    position: absolute;
+    bottom: -19px;
+    left: 170px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.bolinha4{
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 10px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    border: solid black 4px;
+}
