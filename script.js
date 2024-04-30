@@ -38,11 +38,25 @@ function rodaEscolherFrente() {
     console.log("Próximo Alien:", rodaDeSelecao[alienAtual]);
     losangoInterno.innerHTML = rodaDeSelecao[alienAtual];
     rodarRodaSelecao()
-    
+}
+function rodaEscolherTras() {
+    console.log("Função rodaEscolherFrente() foi chamada.");
+    alienAtual = (alienAtual - 1) % rodaDeSelecao.length
+    console.log("Alien Atual:", losangoInterno.innerHTML);
+    console.log("Próximo Alien:", rodaDeSelecao[alienAtual]);
+    losangoInterno.innerHTML = rodaDeSelecao[alienAtual];
+    rodarRodaSelecaoTras()
 }
 function rodarRodaSelecao(){
     let movimento = document.querySelector('.movimento')
     anguloAtual = (anguloAtual + 90)
+    movimento.style.transform = `rotate(${anguloAtual}deg)`
+    let audioVirada = document.querySelector('.audioVirada')
+    audioVirada.play()
+}
+function rodarRodaSelecaoTras(){
+    let movimento = document.querySelector('.movimento')
+    anguloAtual = (anguloAtual - 90)
     movimento.style.transform = `rotate(${anguloAtual}deg)`
     let audioVirada = document.querySelector('.audioVirada')
     audioVirada.play()
@@ -61,5 +75,9 @@ document.addEventListener('keydown', (event) => {
         console.log("Tecla ArrowRight foi pressionada.")
         rodaEscolherFrente()
     }
-});
-
+})
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft'){
+        rodaEscolherTras()
+    }
+})
