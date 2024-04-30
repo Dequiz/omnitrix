@@ -1,4 +1,5 @@
 let omnitrix = document.querySelector('.omnitrix')
+omnitrix.addEventListener('click', abrirOmnitrix)
 let alienAtual = 0
 let anguloAtual = 0
 
